@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    height: 100%;
+    }
+
+
+    .slick-prev,
+    .slick-next {
+      display: block !important; /* Ensure buttons are displayed */
+      z-index: 10; /* Ensure buttons are above the content */
+      color: white; /* Adjust color for visibility */
+      font-size: 1.5rem; /* Increase button size */
+    }
+    
+    .slick-prev {
+      left: -30px; /* Position the left arrow */
+    }
+    
+    .slick-next {
+      right: -30px; /* Position the right arrow */
+    }
+    
+
+.gradient-text-animation2 {
+    background: linear-gradient(
+        90deg,
+        #ff6b6b, 
+        #ffb56b, 
+        #3b82f6, 
+        #6366f1, 
+        #d946ef, 
+        #ff6b6b  
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text-animation 4s ease infinite;
+    }
+    @keyframes gradient-text-animation2 {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+.gradient-text-animation {
+    background: linear-gradient(
+    90deg,
+    #00fff6,
+    #00e5ff,
+    #00c8ff,
+    #00fff6,
+    #00a8ff,
+    #004eff,
+    #004eff,
+    #00fff6
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-text-animation 3s linear infinite;
+}
+@keyframes gradient-text-animation {
+    0% {
+        background-position: 100%;
+        }
+        100% {
+        background-position: 200%;
+        }
+    }
